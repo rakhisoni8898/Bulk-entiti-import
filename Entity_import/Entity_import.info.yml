@@ -1,0 +1,4 @@
+name: Import Bulk Entities
+description: Drupal 9 module to import entities through CSV.
+type: module
+core_version_requirement: ^8 || ^9

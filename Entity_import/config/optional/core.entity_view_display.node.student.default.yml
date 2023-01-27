@@ -1,0 +1,57 @@
+uuid: 02a4e519-d748-48a8-856e-4b61ffd1cc1a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student.field_class
+    - field.field.node.student.field_contact_number
+    - field.field.node.student.field_name
+    - field.field.node.student.field_roll_number
+    - node.type.student
+  module:
+    - text
+    - user
+id: node.student.default
+targetEntityType: node
+bundle: student
+mode: default
+content:
+  field_class:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_contact_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_roll_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,7 @@
+Entity_import.content:
+  path: '/import-entity'
+  defaults:
+    _controller: '\Drupal\Entity_import\Controller\ImportPage::content'
+    _title: 'Import Data'
+  requirements:
+    _permission: 'access content'
